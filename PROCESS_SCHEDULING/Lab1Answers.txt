@@ -1,0 +1,57 @@
+Reference - WIkipedia.org
+Additional Questions:
+
+1)What are the advantages and disadvantages of each of the two scheduling policies? 
+Also, give the advantages and disadvantages of the round robin scheduling policy originally implemented in Xinu.
+
+LINUX -LIKE SCHEDULING:
+The CPU time is sliced into small intervals called epochs and every process executes for their quantum time in the given epoch. 
+The quantum of the process is set based on its priority and carry over counter value. It implements the startegy using a special datastructure called
+the run queue or the ready queue based on the goodness value.
+
+ADVANTAGE:
+-> The processes are sorted by priority and stored in the queue which is easy to maintain.
+-> It uses a fair scheduling strategy by doing the quantum rollover. 
+-> Whether the process priority is static or dynamic , the scheduler adjusts the runnable process quantum periodically.
+
+DISADVANTAGE:
+-> It has a great overhead due to the usage of the runqueue as the goodness value is computed and compared each and every preempt. 
+
+AGING SCHEDULING STRATEGY:
+It gradually increases the priority of the process based on its waiting time and selects the process with the highest priority to execute.
+
+ADVANTAGE:
+-> It reduces starvation of process as a long waited process moves up the list with aging.
+-> Even the least priority process gets a chance to execute.
+
+DISADVANTAGE:
+-> Though a lower priority process gets selected , the CPU time alloted is very less for the process to finish the job. 
+
+ROUND ROBIN SCHEDULING:
+Time slices are assigned fairly to each and every process in a circular and equal proportion.
+
+ADVANTAGE:
+-> It is a simple and easy scheduling algorithm .
+-> It is a fair scheduling strategy as it allocates equal time slots.
+
+DISADVANTAGE:
+-> It has high context switch overhead when the priorities of the processes are equal or dynamically change. 
+-> When a process priority comes in, it is added to the tail of the queue. Hence the priority has no significance.
+   It acts like a FCFS scheduler.
+
+
+2) Describe the way each of the schedulers affects the NULL process.
+
+AGING SCHEDULER : The Aging scheduler exponentially increases the priority of the process based on its wait time by multiplying its priority by 1.2
+And it selects the process with the highest priority for execution. The NULL process has the least priority , i.e. 0. Hence its priority does not get 
+increased in spite of the aging strategy. Thus, it implements once all the processes finish their execution.
+
+LINUX LIKE SCHEDULER : The linux -like scheduler computes a goodness value for all runnable processes in an epoch and selects the process with the maximum goodness 
+value for execution. The goodness value is a sum of quantum , i.e., priority plus carry over counter. 
+For a NULL process, the goodness value will be zero. Hence unless there is no process to execute on the queue for a particular epoch, NULL process is not called.
+If all the runnable processes have used up their quantums then goodness becomes zero and initiates  a new epoch.
+When there are no runnable process in an  epoch, then NULL process gets the slot to run. 
+
+XINU SCHEDULER : The XINU scheduler gives equal time slices for all jobs and selects the process with the highest priority.
+Since NULL process has a 0 priority, it cannot get selected unless a higher priority process has finished its time slot and got preempted.
+Thus NULL process executes at the end of time slot when all processes are done.
