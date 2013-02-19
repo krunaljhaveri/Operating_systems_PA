@@ -1,0 +1,285 @@
+beginnign to writewriting into block 0: writing into block 1: writing into block 2: writing into block 3: writing into block 4: writing into block 5: writing into block 6: writing into block 7: writing into block 8: writing into block 9:
+ test string 0 process id : A
+
+ test string 0 process id : B
+
+ test string 0 process id : C
+
+ test string 0 process id : D
+
+ test string 0 process id : E
+
+ test string 0 process id : F
+
+ test string 0 process id : G
+
+ test string 0 process id : H
+ read done
+
+ test string 1 process id : A
+ read done
+
+ test string 1 process id : H
+ read done
+
+ test string 1 process id : G
+ read done
+
+ test string 2 process id : G
+ read done
+
+ test string 1 process id : E
+ read done
+
+ test string 2 process id : A
+ read done
+
+ test string 3 process id : A
+ read done
+
+ test string 1 process id : C
+ read done
+
+ test string 2 process id : C
+ read done
+
+ test string 3 process id : C
+ read done
+
+ test string 4 process id : C
+ read done
+
+ test string 2 process id : E
+ read done
+
+ test string 4 process id : A
+ read done
+
+ test string 3 process id : E
+ read done
+
+ test string 4 process id : E
+ read done
+
+ test string 5 process id : E
+ read done
+
+ test string 6 process id : E
+ read done
+
+ test string 5 process id : C
+ read done
+
+ test string 6 process id : C
+ read done
+
+ test string 7 process id : C
+ read done
+
+ test string 8 process id : C
+ read done
+
+ test string 9 process id : C
+ read done
+
+ test string 1 process id : B
+ read done
+
+ test string 2 process id : B
+ read done
+
+ test string 3 process id : B
+ read done
+
+ test string 4 process id : B
+ read done
+
+ test string 5 process id : B
+ read done
+Process-C SUCCESS
+ read done
+
+ test string 1 process id : D
+ read done
+
+ test string 2 process id : D
+ read done
+
+ test string 3 process id : D
+ read done
+
+ test string 4 process id : D
+ read done
+ read done
+
+ test string 6 process id : B
+ read done
+
+ test string 7 process id : B
+ read done
+
+ test string 8 process id : B
+ read done
+
+ test string 9 process id : B
+ read done
+Process-B SUCCESS
+ read done
+
+ test string 5 process id : A
+ read done
+
+ test string 6 process id : A
+ read done
+
+ test string 7 process id : A
+ read done
+
+ test string 8 process id : A
+ read done
+
+ test string 9 process id : A
+
+ test string 5 process id : D
+ read done
+
+ test string 6 process id : D
+ read done
+
+ test string 7 process id : D
+ read done
+
+ test string 8 process id : D
+ read done
+
+ test string 9 process id : D
+ read done
+ read done
+
+ test string 7 process id : E
+ read done
+
+ test string 8 process id : E
+ read done
+
+ test string 9 process id : E
+ read done
+Process-E SUCCESS
+ read done
+Process-A SUCCESS
+ read done
+
+ test string 2 process id : H
+ read done
+
+ test string 3 process id : H
+ read done
+
+ test string 4 process id : H
+ read done
+
+ test string 5 process id : H
+ read done
+
+ test string 6 process id : H
+Process-D SUCCESS
+ read done
+
+ test string 3 process id : G
+ read done
+
+ test string 4 process id : G
+ read done
+
+ test string 5 process id : G
+ read done
+
+ test string 6 process id : G
+ read done
+ read done
+
+ test string 1 process id : F
+ read done
+
+ test string 2 process id : F
+ read done
+
+ test string 3 process id : F
+ read done
+
+ test string 4 process id : F
+ read done
+
+ test string 5 process id : F
+ read done
+
+ test string 7 process id : H
+ read done
+
+ test string 8 process id : H
+ read done
+
+ test string 9 process id : H
+ read done
+Process-H SUCCESS
+
+ test string 7 process id : G
+ read done
+
+ test string 8 process id : G
+ read done
+
+ test string 9 process id : G
+ read done
+Process-G SUCCESS
+ read done
+
+ test string 6 process id : F
+ read done
+
+ test string 7 process id : F
+ read done
+
+ test string 8 process id : F
+ read done
+
+ test string 9 process id : F
+ read done
+Process-F SUCCESS
+
+
+============================================================================
+
+        Vendor: SEAGATE ID: ST336607LW  Revision: 0007
+        Logical Blocks: 1024
+        Block Size: 128
+        Outer Track Size: 32
+        Speed: 5.00736000
+
+        Number of Reads: 0
+        Number of Writes: 10
+        Seek Time: 0.00000000
+        Rotate Time: 0.01664216
+        Transfer Time: 3.74448811
+        Total Time: 3.76113028
+
+
+
+============================================================================
+
+        Vendor: IBM-ESXS        ID: DTN036C1UCDY10F     Revision: S23J
+        Logical Blocks: 1024
+        Block Size: 128
+        Outer Track Size: 32
+        Speed: 10.21439999
+
+        Number of Reads: 17
+        Number of Writes: 10
+        Seek Time: 0.00000000
+        Rotate Time: 0.02202772
+        Transfer Time: 4.95623825
+        Total Time: 4.97826597
+
+
+
+A
